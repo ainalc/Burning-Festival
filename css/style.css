@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+/*franja amb logo*/
+
+/*#top{
+	width: 100%;
+	height: 30px;
+	background-color: darkgrey;
+	display: flex;
+	justify-content: center;
+}
+
+#top > img{
+	width: auto;
+	height: 100%;
+	justify-content: center;
+}*/
+
+/*menu*/
+
+nav{
+	width: 100%;
+	height: 100px;
+	/*background-color: hotpink;*/
+}
+
+#menu{
+	padding-left: 20px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.elemMenu{
+	width: auto;
+	height: auto;
+	padding: 30px;
+}
+
+.elemMenu > a{
+	font-family: "Abril Fatface", serif;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.elemMenu > a:hover{
+	text-decoration: underline #f8da47;
+}
+
+/*submenu*/
+
+.submenu{
+	list-style: none;
+	height: auto;
+	width: AUTO;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+
+.elemsubMenu{
+	width: 100%;
+	height: auto;
+	position: relative;
+	list-style: none;
+	top: 20px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.elemsubMenu >a{
+	width: auto;
+	height: auto;
+	font-family: "Abril Fatface", serif;
+	font-size: 1.1rem;
+	display: block;
+	/*background-color: black;*/
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+.elemsubMenu >a:hover{
+	text-decoration: underline #f8da47;
+}
+
+.elemMenu:hover .submenu{
+	display: block;
+}
+
+/*video principal home*/
+
+
+#videohome{
+	/*position: relative;*/
+	width: 100%;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+	position: relative
+}
+
+#logohome{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation-name: ghost;
+	animation-duration: 8s;
+	width: 20%;
+}
+
+@keyframes ghost{
+from{opacity: 0;}
+to{opacity: 1;}
+}
+
+#dembow{
+	/*position: absolute;*/
+	width: 95%;	
+	border-radius: 100px;
+	display: block;
+
+}
+
+/*invitació / introducció / proposta del festival*/
+
+#bienvenidos{
+	width: auto;
+	height: auto;
+	/*background-color: red;*/
+	text-align: center;
+	margin: 5% 25% 8% 25%;
+	color: #f8da47;
+}
+
+#bienvenidos >h1{
+	font-family: "Abril Fatface", serif;
+	font-size: 3rem;
+	padding-bottom: 40px;
+}
+
+#bienvenidos >p{
+	 font-family: "Poppins", sans-serif;
+}
+
+/*gallery*/
+
+#gallery{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+#contenidorgallery{
+	width: 95%;
+}
+
+.col25{
+	width: calc(33.6% - 20px);
+	padding: 10px;
+	border-radius: 15%;
+}
+
+/*footer*/
+
+footer{
+	width: 100%;
+	height: auto;
+	margin-top: 7%;
+	margin-bottom: 2%;
+}
+
+hr{
+	border-color: #f8da47;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#peu{
+	/*border: #f8da47 3px solid;*/
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#peu >img{
+	height: 150px;
+	width: auto;
+}
+
+#xarxessocial{
+	margin-top: 20px;
+}
+
+#xarxessocial >img{
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MÒBIL*/
+
+@media screen and (max-width: 600px) {
+
+	.col25{
+		width: 100%;	
+	}
+
+	.elemMenu{
+		padding: 30px 20px 30px 20px;
+	}
+
+	.elemMenu >a{
+		font-size: 1rem;
+	}
+
+	.elemsubMenu >a{
+		font-size: 1rem;
+	}
+
+
+	#bienvenidos >h1{
+		font-size: 2rem;
+	}
+
+	#bienvenidos >p{
+		font-size: 0.7rem;
+	}
+
+	#peu >img{
+		width: 100px;
+		height: auto;
+	}
+
+
+}

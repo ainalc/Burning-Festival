@@ -1,0 +1,324 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: black;
+}
+
+nav{
+	width: 100%;
+	height: 100px;
+	/*background-color: hotpink;*/
+}
+
+#menu{
+	padding-left: 20px;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+
+.elemMenu{
+	width: auto;
+	height: auto;
+	padding: 30px;
+}
+
+.elemMenu > a{
+	font-family: "Abril Fatface", serif;
+	font-size: 1.5rem;
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.elemMenu > a:hover{
+	text-decoration: underline #f8da47;
+}
+
+/*submenu*/
+
+.submenu{
+	list-style: none;
+	height: auto;
+	width: AUTO;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+
+.elemsubMenu{
+	width: 100%;
+	height: auto;
+	position: relative;
+	list-style: none;
+	top: 20px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.elemsubMenu >a{
+	width: auto;
+	height: auto;
+	font-family: "Abril Fatface", serif;
+	font-size: 1.1rem;
+	display: block;
+	/*background-color: black;*/
+	color: white;
+	text-decoration: none;
+	padding-top: 10px;
+}
+
+.elemsubMenu >a:hover{
+	text-decoration: underline #f8da47;
+}
+
+.elemMenu:hover .submenu{
+	display: block;
+}
+
+/*CONTACTA*/
+
+.titContact{
+	text-align: center;
+	color: white;
+	font-size: 3.5rem;
+	font-family: "Abril Fatface", serif;
+	margin-top: 2%;
+}
+
+#formInfo{
+	width: 100%;
+	display: flex;
+	margin-top: 50px;
+}
+
+/*FORMULARI*/
+
+#Form{
+	color: black;
+	/*background-color: pink;*/
+	width: 50%;
+	right: 0px;
+	height: auto;
+	/*display: flex;
+	flex-direction: column;*/
+	justify-content: right;
+	align-items: center;
+	display: flex;
+	position: relative;
+	background: url('../media/formulari/fonsGroc.png') 500px 0 no-repeat;
+
+}
+
+.contForm{
+	width: 40%;
+	align-items: end;
+}
+
+.contForm >p{
+	font-family: "Poppins", sans-serif;
+}
+
+.colForm{
+	flex-direction: column;
+	display: flex;
+	width: 90%;
+	margin-left: 5%;
+}
+
+.colForm >input{
+	background-color: rgba(0, 0, 0, 0.3);
+	border-style: none;
+	border-radius: 10px;
+	color: white;
+	height: 25px;
+	margin: 10px 0px 10px 0px;
+}
+
+.boto{
+	width: 70px;
+	height: 25px;
+	background-color: white;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.boto >a{
+	text-decoration: none;
+	color: black;
+	font-family: "Abril Fatface", serif;
+	padding: 5px;
+}
+
+.fonsGroc{
+	position: absolute;
+	width: 35%;
+	height: auto;
+}
+
+/*INFORMACIÓ*/
+
+#Info{
+	width: 50%;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+}
+
+.ContInfo{
+	/*width: 21%;*/
+}
+
+.ContInfo >h2, p{
+	padding: 15px;
+}
+
+.ContInfo >h2{
+	font-family: "Abril Fatface", serif;
+	font-size: 1.5rem;
+}
+
+.ContInfo >p{
+	font-family: "Poppins", sans-serif;
+}
+
+
+/*MAPA*/
+
+#mapa{
+	width: 95%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	margin: auto;
+	margin-top: 5%;
+}
+
+#mapa >iframe{
+	width: 100%;
+	border-radius: 30px;
+
+}
+
+/*footer*/
+
+footer{
+	width: 100%;
+	height: auto;
+	margin-top: 7%;
+	margin-bottom: 2%;
+}
+
+hr{
+	border-color: #f8da47;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+#peu{
+	/*border: #f8da47 3px solid;*/
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#peu >img{
+	height: 150px;
+	width: auto;
+}
+
+#xarxessocial{
+	margin-top: 20px;
+}
+
+#xarxessocial >img{
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MÒBIL*/
+
+@media screen and (max-width: 600px) {
+
+	.elemMenu{
+		padding: 30px 20px 30px 20px;
+	}
+
+	.elemMenu >a{
+		font-size: 1rem;
+	}
+
+	.elemsubMenu >a{
+		font-size: 1rem;
+	}
+
+	.titContact{
+		font-size: 2rem;
+	}
+
+
+	.contForm{
+		width: 70%;
+	}
+
+	#formInfo{
+		display: block;
+		margin-top: 0px;
+	}
+
+	#Form, #Info{
+		width: 100%;
+	}
+
+	#Form{
+		background: url('../media/formulari/fonsGroc.png') 0px 0 no-repeat;
+		right: 0px;
+		height: 500px;
+		/*display: flex;
+		flex-direction: column;*/
+		justify-content: center;
+		align-items: center;
+	}
+
+
+
+	.ContInfo >h2{
+	font-size: 1.2rem;
+	}
+
+	.ContInfo >p{
+		font-size: 1rem;
+	}
+
+
+
+
+
+
+	#peu >img{
+		width: 100px;
+		height: auto;
+	}
+
+
+}
